@@ -4,7 +4,7 @@ const api = axios.create({
   baseURL: 'http://localhost:3000'
 });
 
-api.interceptors.request.use(async config => {
+/*api.interceptors.request.use(async config => {
   const token = getToken();
 
   if (token) {
@@ -12,6 +12,6 @@ api.interceptors.request.use(async config => {
   }
 
   return config
-})
+})*/
 
 export default api
